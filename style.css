@@ -1,0 +1,101 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styling */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Form container */
+  form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    max-width: 100%;
+    margin: 20px;
+  }
+  
+  /* Form elements styling */
+  label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: inline-block;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  /* Button styling */
+  button {
+    background-color: #4CAF50;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Focus state for inputs */
+  input:focus, select:focus {
+    outline: none;
+    border-color: #4CAF50;
+  }
+  
+  /* Styling for select dropdown */
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zY2hlbWVzL3htbG5zL3N2ZyIgdmlld0JveD0iMCAwIDAgMCI+PHBhdGggZD0iTTEwLjk3MiwxMS4xOTdDNTAuNzksMTguMDc1IDQ0LjEwNSwyMi45MTkgMzcgMjQuMzgxNCAzMi4zNjcwNSwzMy41NTAyMSBMOSwzMy42NzM4MCwzMy44MDA5Miw0LjQ3MywzMy45ODAxOVoiLz48L3N2Zz4='); 
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px;
+  }
+  
+  /* Additional styling for inputs */
+  input[type="text"], input[type="email"], input[type="date"], input[type="tel"] {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Styling for the overall form layout */
+  form > label {
+    margin-bottom: 8px;
+  }
+  
+  form input,
+  form select,
+  form button {
+    margin-top: 6px;
+  }
+  
+  /* Responsiveness for smaller screens */
+  @media (max-width: 600px) {
+    form {
+      width: 90%;
+    }
+  }
+  

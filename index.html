@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <title>Firebase Example</title> 
         <!-- Add these scripts in the head section -->
+        <link rel="stylesheet" href="style.css">
         <script src="./linkwithindex.js" type="module"></script>
         
     <body>
@@ -14,6 +15,7 @@
 
             <label for="Country">Country:</label>
             <select id="Country" name="Country">
+                <option value="AF">Select a country</option>
                 <option value="AF">Afghanistan</option>
                 <option value="AL">Albania</option>
                 <option value="DZ">Algeria</option>
@@ -223,6 +225,7 @@
 
             <label for="Profession">Profession:</label>
             <select id="Profession" name="Profession">
+                <option value="">Select a Profession</option>
                 <option value="Photographer">Photographer</option>
                 <option value="Videographer">Videographer</option>
                 <option value="Musician">Musician</option>
@@ -239,7 +242,7 @@
 
             <label for="Phone">Phone:</label><br>
             <input type="tel" id="Phone" name="Phone" placeholder="Your phno"><br>
-            
+
             <button type="submit">Submit</button>
           </form>
           
