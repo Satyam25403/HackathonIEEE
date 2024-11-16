@@ -44,20 +44,23 @@ async function fetchUsers() {
 // Form submission handler
 async function submitForm(e) {
     e.preventDefault();
-    const area = getElementVal('Area'); // ID from input field
-    const name = getElementVal('Name');
-    const profession = getElementVal('Profession');
+    const name = getElementVal('Name'); // ID from input field
+    const country = getElementVal('Country');
+    const dob = getElementVal('dob');
     const email = getElementVal('email');
+    const profession = getElementVal('Profession');
+    const phone = getElementVal('Phone');
 
-    console.log(area, name, profession, email);
 
     // Add data to Firestore
     try {
         await addDoc(collection(db, "users"), {
-            Area: area,
-            Name: name,
-            Profession: profession,
-            Email: email
+            Name : name,
+            Country : country,
+            dob : dob,
+            email : email,
+            Profession : profession,
+            Phone : phone
         });
         alert("Data successfully added to Firestore!");
     } catch (error) {
@@ -68,10 +71,12 @@ async function submitForm(e) {
     try {
         const newMessageRef = push(usersRef);
         await set(newMessageRef, {
-            Area: area,
-            Name: name,
-            Profession: profession,
-            Email: email
+            Name : name,
+            Country : country,
+            dob : dob,
+            email : email,
+            Profession : profession,
+            Phone : phone
         });
         console.log("Data successfully added to Realtime Database!");
     } catch (error) {
